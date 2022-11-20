@@ -307,9 +307,7 @@ public:
       for (size_t i = 0; i < v.sz; i++)
           for (size_t j = 0; j < v.sz; j++)
               istr >> v.pMem[i][j]; 
-      return istr;
-  
-  
+      return istr;  
   }
   friend ostream& operator<<(ostream& ostr, const TDynamicMatrix& v)
   {
@@ -318,11 +316,8 @@ public:
           for (size_t j = 0; j < v.sz; j++)
               ostr << v.pMem[i][j] << " ";
           ostr << "\n";
-      }
-      
+      }      
       return ostr;
-  
-  
   }
 };
 
